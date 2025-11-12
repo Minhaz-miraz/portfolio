@@ -7,16 +7,16 @@ const Swiper1 = () => {
 
   const slides = [
     {
-      image: 'https://i.postimg.cc/rsWVnb43/Screenshot-88.png',
+      image: 'https://i.postimg.cc/W4mdxmZQ/Screenshot-2025-11-12-121327.png',
     },
     {
-      image: 'https://i.postimg.cc/8599YzBP/Screenshot-87.png',
+      image: 'https://i.postimg.cc/7PRZstcC/Screenshot-2025-11-12-121346.png',
     },
     {
-      image: 'https://i.postimg.cc/RZ5pfYGy/Screenshot-85.png',
+      image: 'https://i.postimg.cc/K8G9VfCg/Screenshot-2025-11-12-121940.png',
     },
     {
-      image: 'https://i.postimg.cc/kgb49QX9/Screenshot-2025-11-03-233602.png',
+      image: 'https://i.postimg.cc/dVVBn1Tr/Screenshot-2025-11-12-121954.png',
     }
   ];
 
@@ -87,7 +87,7 @@ const Swiper1 = () => {
         {/* Progress Bar */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-white/20 rounded-t-2xl overflow-hidden z-20">
           <div 
-            className="h-full bg-gradient-to-r from-cyan-400 to-purple-500 transition-all duration-100 ease-linear"
+            className="h-full bg-gradient-to-r from-cyan-400 to-[#d9ed92] transition-all duration-100 ease-linear"
             style={{ width: `${progress}%` }}
           />
         </div>

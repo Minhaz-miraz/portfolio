@@ -1,37 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const Swiper2 = () => {
+const Swiper3 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState(0);
 
   const slides = [
     {
-      image: 'https://i.postimg.cc/9QX5VS5y/Screenshot-2025-11-04-022047.png'
+      image: 'https://i.postimg.cc/131B6QGs/Screenshot-2025-11-12-141836.png',
     },
     {
-      image: 'https://i.postimg.cc/kgb49QX9/Screenshot-2025-11-03-233602.png'
+      image: 'https://i.postimg.cc/HLgTfVbK/Screenshot-2025-11-12-141856.png',
     },
     {
-      image: 'https://i.postimg.cc/d1rSGmc9/Screenshot-2025-11-04-022207.png'
+      image: 'https://i.postimg.cc/T1pxrmXK/Screenshot-2025-11-12-142105.png',
     },
     {
-      image: 'https://i.postimg.cc/g0CGYDKX/Screenshot-2025-11-04-023028.png'
-    },
-    {
-      image: 'https://i.postimg.cc/JnMjdbBh/Screenshot-2025-11-04-022428.png'
-    },
-    {
-      image: 'https://i.postimg.cc/wvm1638D/Screenshot-2025-11-04-020857.png'
-    },
-    {
-      image: 'https://i.postimg.cc/TY9J8NcR/Screenshot-2025-11-04-021457.png',
-    },
-    {
-      image: 'https://i.postimg.cc/8zGWCRtn/Screenshot-2025-11-04-022655.png',
-    },
-    {
-      image: 'https://i.postimg.cc/Qx3VgX1N/Screenshot-2025-11-04-022909.png',
+      image: 'https://i.postimg.cc/CxjgHS9v/Screenshot-2025-11-12-142137.png',
     }
   ];
 
@@ -180,4 +165,4 @@ const Swiper2 = () => {
   );
 };
 
-export default Swiper2;
+export default Swiper3;

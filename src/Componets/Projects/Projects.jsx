@@ -2,48 +2,60 @@ import React from 'react';
 import Swiper1 from '../ReactSwiper/Swiper1/Swiper1';
 
 import Swiper2 from '../ReactSwiper/Swiper2';
+import Swiper3 from '../ReactSwiper/Swiper3';
 
 const Projects = () => {
   const projects = [
     {
-      cubeComponent: <Swiper2/>,
+      cubeComponent: <Swiper2 />,
       title: 'Byte Story- AI-Powered Blogging Platform',
       description: 'ByteStory is an AI-driven blogging platform designed to simplify and enhance the content creation process. It integrates intelligent tools for blog generation, grammar checking, SEO scoring, PDF summarization, and speech interaction — all within a single workspace. The platform promotes productivity, accessibility, and community engagement through real-time feeds, personalized learning, and secure AI usage management. It aims to empower writers, students, and marketers to create professional, optimized content efficiently.',
-      tech: ['Nexyt.js', 'Node.js', 'MongoDB', 'Express.js','Stripe','Socket i.o','Tailwind CSS','Firebase','Express.js','JWT'],
+      tech: ['Next.js', 'Node.js', 'MongoDB', 'Express.js', 'Stripe', 'Socket i.o', 'Tailwind CSS', 'Firebase', 'Express.js', 'JWT'],
       live: 'https://byte-story.vercel.app/',
       github: 'https://github.com/Minhaz-miraz/ByteStory'
     },
     {
       cubeComponent: <Swiper1 />,
-      title: 'Hobby Hub',
-      description: 'HobbyHub is a community platform that connects people through local hobby-based groups, making it easy to discover, join, or create clubs around shared passions.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express.js','React Router','Tailwind CSS','Firebase','Express.js','JWT'],
-      live: 'https://service-lagbe.web.app/ ',
-      github: 'https://github.com/Minhaz-miraz/Service-Lagbe'
+      title: 'Axial Construct - A Company Management Platform',
+      description: 'Axial Construction is a role-based construction company management system designed to streamline operations between Administrators, HR personnel, and Employees. The platform enables efficient workforce management, transparent payroll tracking, and smooth communication across organizational levels — all from a centralized dashboard.This project demonstrates end-to-end system design, combining secure authentication, user-role-based access control, workflow automation, and integrated payroll functionality.',
+      key_Features: "👤 Role - Based Access System.Admin Panel: Full system control, including managing users, monitoring project activities, and handling payments.HR Dashboard: Employee verification, profile management, and request submission to administrators.Employee Dashboard: Allows employees to post work reports, log hours, track payment history, and view completed and pending payments.Each role has unique access privileges — ensuring both data privacy and operational efficiency.",
+tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'React Router', 'Tailwind CSS', 'Firebase', 'Express.js', 'JWT'],
+  live: 'https://axial-construction.web.app/ ',
+    github: 'https://github.com/Minhaz-miraz/Axial-Construct'
     },
+    {
+      cubeComponent: <Swiper3 />,
+      title: 'Service Lagbe -Smart Service Provider Platform ',
+      description: 'Service Lagbe  a full-stack web application designed to connect users with professional service providers for various needs — including home services, internet setup, house repairs, cleaning, and maintenance.Service providers can create and manage their own service listings with detailed information such as pricing, schedule availability, and descriptions. Through a dedicated provider dashboard, they can track bookings, view client notes, update service progress in real-time, and manage work status dynamically.Users can easily browse, book, and track services, with instant updates on provider status and work progress. The system includes complete CRUD functionality for service management, ensuring flexibility for providers to add, edit, or remove offerings anytime.Built with a focus on usability, interactivity, and real-time updates, the platform demonstrates expertise in responsive web design, dynamic data handling, and efficient backend architecture.',
+      key_Features: "👤 Role - Based Access System.Admin Panel: Full system control, including managing users, monitoring project activities, and handling payments.HR Dashboard: Employee verification, profile management, and request submission to administrators.Employee Dashboard: Allows employees to post work reports, log hours, track payment history, and view completed and pending payments.Each role has unique access privileges — ensuring both data privacy and operational efficiency.",
+tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'React Router', 'Tailwind CSS', 'Firebase', 'Express.js', 'JWT'],
+  live: 'https://service-lagbe.web.app/ ',
+    github: 'https://github.com/Minhaz-miraz/Service-Lagbe'
+    }
+
 
   ];
 
-  return (
-    <section id="projects" className="py-12  sm:py-16 lg:py-20 bg-cyan-800" >
-      <div className=" container w-11/12 mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16 bg-[#d9ed92] bg-clip-text text-transparent">
-          Featured Projects
-        </h2>
-        {/* grid layout */}
+return (
+  <section id="projects" className="py-12  sm:py-16 lg:py-20 bg-cyan-800" >
+    <div className=" container w-11/12 mx-auto px-4 sm:px-6">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16 bg-[#d9ed92] bg-clip-text text-transparent">
+        Featured Projects
+      </h2>
+      {/* grid layout */}
 
-       
 
-          {projects.map(project => {
-            const { title, description, github, tech,live } = project
-            return (<>
-              <div className="mt-20 grid grid-cols-1 md:gap-2 md:grid-cols-[60%_40%] lg:grid-cols-[60%_40%] rounded-2xl border bg-cyan-500/20 border-cyan-300 backdrop-blur-md p-4 text-gray-100 min-h-40">
-                <div className="order-1 md:order-1  h-full  md p-4  min-h-40">
 
-                  {project.cubeComponent}
+      {projects.map(project => {
+        const { title, description, github, tech, live } = project
+        return (<>
+          <div className="mt-20 grid grid-cols-1 md:gap-2 md:grid-cols-[60%_40%] lg:grid-cols-[60%_40%] rounded-2xl border bg-cyan-500/20 border-cyan-300 backdrop-blur-md p-4 text-gray-100 min-h-40">
+            <div className="order-1 md:order-1  h-full  md p-4  min-h-40">
 
-                </div>
-                 <div className="order-2 flex min-h-40 flex-col gap-5 rounded-xl bg-black/20 p-5 text-white">
+              {project.cubeComponent}
+
+            </div>
+            <div className="order-2 flex min-h-40 flex-col gap-5 rounded-xl bg-black/20 p-5 text-white">
               {/* Title */}
               <h3 className="text-2xl font-semibold tracking-wide text-[#d9ed92] md:text-3xl">
                 {title}
@@ -65,7 +77,7 @@ const Projects = () => {
 
               {/* Description */}
               {description && (
-                <p className="text-lg text-white md:text-base/7">
+                <p className="text-2xl text-white md:text-base/7">
                   {description}
                 </p>
               )}
@@ -117,14 +129,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-                
-              </>
-              )
+
+        </>
+        )
       })}
 
-          
 
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   sm:gap-8 ">
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   sm:gap-8 ">
             {projects.map((project) => (
               <div
                 key={project.title}
@@ -174,9 +186,9 @@ const Projects = () => {
               </div>
             ))}
           </div> */}
-        </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
 
 export default Projects;
